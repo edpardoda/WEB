@@ -1,0 +1,64 @@
+    :root{
+        --primary-color:#503dc9;
+        --primary-color-degre:#2a99e6;
+        --secondary-color:#ff6123;
+    }
+
+    body {
+    font-family: "Oswald", sans-serif;
+    }
+
+
+    .sectionOne{
+        background-color:var(--primary-color);
+        height: 40rem;
+        display: grid;     
+    }
+
+
+    .tittlePage{
+        font-weight: 600;
+        color: white;
+        margin-left: 20%;
+        margin-top: 3vw;
+    }
+
+    .containerOne{
+        width: 50%;
+    }
+
+    .containerOne img{
+        height: 36vw;
+        margin-left: 10%;
+    }
+
+    .containerTwo{
+        width: 34%;
+    }
+
+    .containerTwo .title{
+        color: var(--primary-color-degre);
+        font-weight: 700;
+        transform: scaleY(1.5);
+        
+    }
+
+    .containerTwo .description{
+        color: white;
+        font-size: 3vw;
+        
+    }
+    .containerTwo button{
+        background-color: var(--secondary-color);
+        color: white;
+        width: 100%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        border-style: solid;
+        border-width: 0vw;
+        border-radius: 0.5vw;
+        font-size: 1.2vw;
+
+
+    }
+
