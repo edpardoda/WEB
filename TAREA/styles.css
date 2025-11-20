@@ -1,0 +1,219 @@
+:root {
+    --pan: #ff385c;              /*primary */
+    --queso: #00a699;            /*secondary */
+    --café: #222;                /* dark */
+    --leche: #ffffff;            /* light */
+    --harina: #cccccc;           /* gray */
+    --colada: Arial, Helvetica, sans-serif; /* font */
+    --cuchillo: 6px;             /* radius */
+
+    --azucar: #4bc5c3;           /* pill background */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--colada);
+    color: var(--café);
+}
+
+
+.contenedor-grande {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barra-pan {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.logo-queso {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-queso img {
+    height: 28px;
+    width: auto;
+}
+
+.logo-queso span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--pan);
+}
+
+.menu-colada a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--café);
+    font-size: 15px;
+}
+
+.pastilla-azucar {
+    background: var(--azucar);
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: var(--leche);
+}
+
+.portada-cafe {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.portada-fondo {
+    width: 100%;
+    height: 100%;
+    background-image: url("./static/imagen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta-pan {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background: var(--queso);
+    color: var(--leche);
+    padding: 30px;
+    width: 320px;
+    border-radius: var(--cuchillo);
+    transform: translateY(-50%);
+}
+
+.titulo-pan {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.texto-pan {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.boton-pan {
+    background: var(--pan);
+    color: var(--leche);
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: var(--cuchillo);
+}
+
+.ganancias-colada {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.texto-azul {
+    color: #0077cc;
+}
+
+.formulario-colada {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.columna-arepa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.entrada {
+    padding: 10px;
+    width: 180px;
+    border: 1px solid var(--harina);
+    border-radius: var(--cuchillo);
+}
+
+.caja-colada {
+    background: var(--queso);
+    color: var(--leche);
+    padding: 20px;
+    border-radius: var(--cuchillo);
+    width: 120px;
+    text-align: center;
+}
+
+.monto-colada {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.etiqueta-colada {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.hosting-sal {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #ddd;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hosting-sal-titulo {
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.hosting-sal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: center;
+}
+
+.hosting-sal-icono {
+    font-size: 26px;
+    color: var(--harina);
+    margin-top: 5px;
+}
+
+.hosting-sal-subtitulo {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.hosting-sal-texto {
+    font-size: 14px;
+    color: #555;
+}
+
+.buscador-colada {
+    margin: 0 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input-colada {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px 12px;
+    border: 1px solid var(--harina);
+    border-radius: var(--cuchillo);
+    font-size: 14px;
+}
