@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfil Profesional</title>
-  <link rel="stylesheet" href="styless.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro Mascotas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styless.css">
+    <script src="./js/example.js" defer></script>
 </head>
 
 <body>
-    <div class="sectionOne">
-        <div style="width: 100%;">
-            <p class="tittlePage">
-                <img widht="15" height ="24" src="./static/white-removebg-preview.png">
-                ESCUELA DE EMPRENDIMIENTO
-            </p>
-        </div>
-        <div style="display: flex; widht:100%;">
-            <div class="containerOne">
-                <img src="./static/woman-removebg-preview.png" />
-            </div>
-            <div class="containerTwo">
-                <p class="title">TALLER ONLINE GRATUITO</p>
+    <div>
+        <h3>Registro de Mascota</h3>
 
-                <p class="description">
-                    Como escribir textos persuasivos que conecten con tus 
-                    clientes sin sonar desesperado por vender
-                </p>
-                <button>Reservar mi plaza gratis </button>
-            </div>   
-        </div>
+        <form onsubmit="sendRegister(event)">
+            <input type="text" id="nombre" placeholder="Nombre de la mascota" required>
+            <input type="number" id="peso" placeholder="Peso de la mascota" required>
+            <input type="number" id="edad" placeholder="Edad de la mascota" required>
+            <input type="text" id="color" placeholder="Color de la mascota" required>
+
+            <button type="submit">Agregar Mascota</button>
+        </form>
     </div>
 
+    <br>
 
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre mascota</th>
+                    <th>Peso (kg)</th>
+                    <th>Edad</th>
+                    <th>Color</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablebody"></tbody>
+        </table>
+    </div>
 </body>
+</html>
