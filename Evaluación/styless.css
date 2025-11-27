@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #57a6da, #c8e3f9);
+}
+
+.barrasuperior {
+    background: #1d75b6;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-container input {
+    padding: 7px;
+    width: 250px;
+}
+
+.search-container button {
+    padding: 7px 15px;
+    background: orange;
+}
+
+.botonAgregar {
+    background: orange;
+    padding: 10px 18px;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
+
+
+.formulario {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.formulario input {
+    margin: 5px;
+    padding: 8px;
+}
+
+.formulario button {
+    padding: 8px 15px;
+    background: orange;
+}
+
+.tabla-container {
+    width: 95%;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table thead {
+    background: #1d75b6;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.modificar {
+    background: orange;
+    padding: 5px 10px;
+
+}
+
+.eliminar {
+    background: orange;
+    padding: 5px 10px;
+   
+}

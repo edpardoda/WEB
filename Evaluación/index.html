@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Listar Estudiantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styless.css">
+
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <div class="barrasuperior">
+
+        <div class="search-container">
+            <input type="text" id="buscar" placeholder="Ingresar nombre de usuario">
+            <button onclick="buscarEstudiante()">Buscar</button>
+        </div>
+
+        <button class="botonAgregar" onclick="mostrarFormulario()">Agregar</button>
+    </div>
+
+    <h1 class="titulo">LISTAR ESTUDIANTES</h1>
+
+    <form id="formulario" class="formulario" onsubmit="sendRegister(event)">
+        <input type="number" id="numero" placeholder="Numero" required>
+        <input type="number" id="id" placeholder="ID" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="correo" placeholder="Correo" required>
+        <input type="number" id="telefono" placeholder="Teléfono" required>
+        <button type="submit">Registrar</button>
+    </form>
+    
+
+    <div class="tabla-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nro</th>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablebody"></tbody>
+        </table>
+    </div>
+
+</body>
+</html>
