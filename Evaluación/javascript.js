@@ -42,8 +42,8 @@ const buildTable = () => {
             <td>${est.numero}</td>
             <td>${est.id}</td>
             <td>${est.nombre}</td>
-            <td>${est.correo}</td>
-            <td>${est.telefono}</td>
+            <td> <button>${est.correo} </button></td>
+            <td> <button>${est.telefono} </button></td>
 
             <td>
                 <button class="modificar" onclick="ActualizarEst(${index})">Modificar</button>
@@ -56,8 +56,9 @@ const buildTable = () => {
 };
 
 const eliminarEst = (index) => {
+    alert("El Estudiante " + arrayEstudiantes[index].nombre + " eliminado");
+
     arrayEstudiantes.splice(index, 1);
-    alert("Estudiante eliminado");
     buildTable();
 };
 
@@ -65,10 +66,18 @@ const ActualizarEst = (index) => {
     const est = arrayEstudiantes[index];
 
     const nuevoNombre = prompt("Nuevo nombre:", est.nombre);
+    console.log(nuevoNombre);
+    
+        if (nuevoNombre == "") { 
+        alert("no puede estar vacio");
+        return
+    }
     const nuevoCorreo = prompt("Nuevo correo:", est.correo);
     const nuevoTel = prompt("Nuevo teléfono:", est.telefono);
 
-    if (nuevoNombre !== null && nuevoCorreo !== null && nuevoTel !== null) {
+
+
+    if (nuevoNombre !== null() && nuevoCorreo !== null && nuevoTel !== null) {
         est.nombre = nuevoNombre;
         est.correo = nuevoCorreo;
         est.telefono = nuevoTel;
@@ -77,6 +86,7 @@ const ActualizarEst = (index) => {
         buildTable();
     }
 };
+
 
 function buscarEstudiante() {
     const filtro = document.getElementById("buscar").value.toLowerCase();
